@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "HackerNews Cron",
+  "version": "1.0",
+  "description": "Gets the top posts from HackerNews and notifies you every now and then.",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["hn.js"]
+    }
+  ]
+}
